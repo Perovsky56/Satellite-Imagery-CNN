@@ -1,0 +1,11 @@
+Input[64, 64, 3]
+Conv2D[96, 2, relu]
+AvgPool[2]
+Conv2D[64, 3, relu]
+AvgPool[2]
+Conv2D[96, 2, relu]
+AvgPool[2]
+Flatten
+Dense[64, relu]
+Dropout[0.5]
+Dense[20, softmax]
